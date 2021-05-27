@@ -1,0 +1,762 @@
+[
+    {
+        "text": "In Queens , North Shore Towers , near the Nassau border , supplanted a golf course , and housing replaced a gravel quarry in Douglaston .",
+        "triple_list": [
+            [
+                "Douglaston",
+                "/location/neighborhood/neighborhood_of",
+                "Queens"
+            ],
+            [
+                "Queens",
+                "/location/location/contains",
+                "Douglaston"
+            ]
+        ]
+    },
+    {
+        "text": "In his authoritative and tough-minded new book , '' The Assassins ' Gate : America in Iraq , '' the New Yorker writer George Packer reminds us that the decision of the Bush administration to go to war against Iraq and its increasingly embattled handling of the occupation were both predicated upon large , abstract ideas about the role of America in the post-cold war world -- most notably , a belief in pre-emptive and unilateral action , the viability of exporting democracy abroad , the urge to streamline the military and the dream of remaking the Middle East .",
+        "triple_list": [
+            [
+                "East",
+                "/location/location/contains",
+                "Iraq"
+            ]
+        ]
+    },
+    {
+        "text": "Martin , the district attorney for Lehigh County in Pennsylvania , said that after his office 's review of the records , he was satisfied with Mr. Cullen 's denials .",
+        "triple_list": [
+            [
+                "Pennsylvania",
+                "/location/location/contains",
+                "County"
+            ]
+        ]
+    },
+    {
+        "text": "Mr. Brown has demeaned Mr. Bush as '' a cheerleader , '' declared that Homeland Security Secretary Michael Chertoff did not know '' the first thing about running a disaster , '' and called critics like Representative Gene Taylor , Democrat of Mississippi , '' a little twerp '' and Senator Norm Coleman , Republican of Minnesota , an unprintable vulgarity -LRB- both in Playboy -RRB- .",
+        "triple_list": [
+            [
+                "Taylor",
+                "/people/person/place_lived",
+                "Mississippi"
+            ]
+        ]
+    },
+    {
+        "text": "Pakistan 's president , Pervez Musharraf , and President Hamid Karzai talked by telephone for an hour on Tuesday , a day after the Afghan intelligence service said it had arrested three Pakistanis who were trying to assassinate the American ambassador , Zalmay Khalilzad . ''",
+        "triple_list": [
+            [
+                "Musharraf",
+                "/people/person/nationality",
+                "Pakistan"
+            ]
+        ]
+    },
+    {
+        "text": "Martha Whitney Bagnall , the daughter of Whitney S. Bagnall and Roger S. Bagnall of New York , is to be married today in Rhinebeck , N.Y. , to Edward Bing Han , the son of Chou-Yeen Han and Bing-Hou Han of Hopewell Junction , N.Y. Lynn Tomalas , a Universal Life minister , is to officiate at the Wilderstein Preservation , a historic house on the Hudson River .",
+        "triple_list": [
+            [
+                "York",
+                "/location/location/contains",
+                "Rhinebeck"
+            ],
+            [
+                "York",
+                "/location/location/contains",
+                "Junction"
+            ]
+        ]
+    },
+    {
+        "text": "Russia has been holding up an entry visa to William F. Browder , who controls a $ 4 billion hedge fund in Moscow and is the largest foreign investor in the country 's stock market .",
+        "triple_list": [
+            [
+                "Russia",
+                "/location/country/administrative_divisions",
+                "Moscow"
+            ],
+            [
+                "Moscow",
+                "/location/administrative_division/country",
+                "Russia"
+            ],
+            [
+                "Russia",
+                "/location/country/capital",
+                "Moscow"
+            ],
+            [
+                "Russia",
+                "/location/location/contains",
+                "Moscow"
+            ]
+        ]
+    },
+    {
+        "text": "It is simple to join emotionally in George Bush 's culture war against the axis of evil , '' editorialized Haaretz , the Israeli newspaper , '' but it must be remembered that , at the end of the day , it is the citizens of Israel and not the Americans who have to continue living in the Middle East .",
+        "triple_list": [
+            [
+                "East",
+                "/location/location/contains",
+                "Israel"
+            ]
+        ]
+    },
+    {
+        "text": "For much of the three years since the show first opened at Yale , Peru 's claim on the objects has been played out in behind-the-scenes talks in Lima , Washington and New Haven between Yale and the government of President Alejandro Toledo .",
+        "triple_list": [
+            [
+                "Toledo",
+                "/people/person/nationality",
+                "Peru"
+            ],
+            [
+                "Peru",
+                "/location/country/capital",
+                "Lima"
+            ],
+            [
+                "Peru",
+                "/location/location/contains",
+                "Lima"
+            ]
+        ]
+    },
+    {
+        "text": "Yale is assuming that it owns the collection , and can negotiate with us which objects it wants to return and which it wants to keep , '' Luis Guillermo Lumbreras , director of Peru 's National Institute of Culture in Lima , said in a telephone interview . ''",
+        "triple_list": [
+            [
+                "Peru",
+                "/location/location/contains",
+                "Lima"
+            ],
+            [
+                "Peru",
+                "/location/country/capital",
+                "Lima"
+            ]
+        ]
+    },
+    {
+        "text": "Many people in Turkey have lost hopes in joining Europe and they are looking for other horizons , '' said Onur Oymen , an opposition politician whose party is staunchly secular .",
+        "triple_list": [
+            [
+                "Europe",
+                "/location/location/contains",
+                "Turkey"
+            ]
+        ]
+    },
+    {
+        "text": "Should Turkey face eastward , toward its Muslim neighbors , or westward , toward Europe ?",
+        "triple_list": [
+            [
+                "Europe",
+                "/location/location/contains",
+                "Turkey"
+            ]
+        ]
+    },
+    {
+        "text": "It was also fictionalized in one of the longest novels ever written , '' Sironia , Texas '' by Madison Cooper , a 1,731-page epic published in two volumes in 1953 .",
+        "triple_list": [
+            [
+                "Cooper",
+                "/people/person/place_lived",
+                "Texas"
+            ]
+        ]
+    },
+    {
+        "text": "Some have called for a memorial to the lynched youth to join the many other shrines here in Waco , a city of 113,000 neighboring President Bush 's ranch in Crawford , and home to Baylor University , founded in 1845 , the first institution of higher learning in Texas and the largest Baptist university in the world .",
+        "triple_list": [
+            [
+                "Texas",
+                "/location/location/contains",
+                "Waco"
+            ]
+        ]
+    },
+    {
+        "text": "Israel has been carrying out ground raids in the West Bank and occasional airstrikes in Gaza , saying it is responding to planned or actual Palestinian attacks .",
+        "triple_list": [
+            [
+                "Israel",
+                "/location/location/contains",
+                "Bank"
+            ]
+        ]
+    },
+    {
+        "text": "The Down Time column on Feb. 3 , about the Franklin Institute Science Museum in Philadelphia , misstated Senator John F. Kerry 's gaffe at a popular restaurant during his presidential campaign .",
+        "triple_list": [
+            [
+                "Philadelphia",
+                "/location/location/contains",
+                "Museum"
+            ]
+        ]
+    },
+    {
+        "text": "WHERE -- Kapalua , Hawaii WHAT -- 2-bedroom house HOW MUCH -- $ 7.95 million This 6,000-square-foot house on Maui has two outdoor showers in private gardens accessible from the houses two full bathrooms .",
+        "triple_list": [
+            [
+                "Hawaii",
+                "/location/location/contains",
+                "Kapalua"
+            ]
+        ]
+    },
+    {
+        "text": "Last month , Dublin , Copenhagen , Munich , Stockholm and Berlin were added to the site bringing the lodging count up to about 600 cheapo places in Europe .",
+        "triple_list": [
+            [
+                "Europe",
+                "/location/location/contains",
+                "Berlin"
+            ],
+            [
+                "Europe",
+                "/location/location/contains",
+                "Munich"
+            ]
+        ]
+    },
+    {
+        "text": "The workers often arrive in convoys , like the 47 repair vehicles from FirstEnergy , a utility holding company in Akron , Ohio , that pulled into the Coliseum parking lot Saturday .",
+        "triple_list": [
+            [
+                "Ohio",
+                "/location/location/contains",
+                "Akron"
+            ]
+        ]
+    },
+    {
+        "text": "Randall W. Helmick , the man whose job it is to get the lights back on in New Orleans and many other parts of Louisiana and southern Mississippi , had finally reached his limit .",
+        "triple_list": [
+            [
+                "Louisiana",
+                "/location/location/contains",
+                "Orleans"
+            ]
+        ]
+    },
+    {
+        "text": "Demolition has begun on another purchase in Long Island City , Queens .",
+        "triple_list": [
+            [
+                "Queens",
+                "/location/location/contains",
+                "City"
+            ],
+            [
+                "City",
+                "/location/neighborhood/neighborhood_of",
+                "Queens"
+            ]
+        ]
+    },
+    {
+        "text": "But at least 20 cities in Norway have longer nights than Oslo .",
+        "triple_list": [
+            [
+                "Norway",
+                "/location/country/administrative_divisions",
+                "Oslo"
+            ],
+            [
+                "Norway",
+                "/location/location/contains",
+                "Oslo"
+            ],
+            [
+                "Oslo",
+                "/location/administrative_division/country",
+                "Norway"
+            ],
+            [
+                "Norway",
+                "/location/country/capital",
+                "Oslo"
+            ]
+        ]
+    },
+    {
+        "text": "Attempting to draw a distinction based on the medium used by the blogger or reporter is misguided , said Jack Balkin , a professor at Yale Law School -LRB- also a blogger -RRB- . ''",
+        "triple_list": [
+            [
+                "Balkin",
+                "/business/person/company",
+                "School"
+            ]
+        ]
+    },
+    {
+        "text": "After studying computer science at the University of Pennsylvania in Philadelphia , Mr. Yang took a job as a software engineer at an investment firm downtown .",
+        "triple_list": [
+            [
+                "Philadelphia",
+                "/location/location/contains",
+                "Pennsylvania"
+            ]
+        ]
+    },
+    {
+        "text": "One author of the study , Dr. Pankaj J. Pasricha of the University of Texas Medical Branch at Galveston , said the test for changes in the gastrointestinal tract , an electrogastrogram , was painless and simple to perform .",
+        "triple_list": [
+            [
+                "Galveston",
+                "/location/location/contains",
+                "Branch"
+            ]
+        ]
+    },
+    {
+        "text": "New York City detectives were looking into at least two unsolved cases in Queens , according to law enforcement officials .",
+        "triple_list": [
+            [
+                "City",
+                "/location/location/contains",
+                "Queens"
+            ]
+        ]
+    },
+    {
+        "text": "One ninth-century copy , from the Fulda monastery in Germany , was acquired in 1929 by the New York Academy of Medicine , along with thousands of other culinary books and documents .",
+        "triple_list": [
+            [
+                "Germany",
+                "/location/location/contains",
+                "Fulda"
+            ]
+        ]
+    },
+    {
+        "text": "What 's been missing in Washington in the last few months -- to say nothing of capitals in Asia and Europe -- is clear language about what the world is ready to do if Iran and North Korea follow the path of India and Pakistan .",
+        "triple_list": [
+            [
+                "Asia",
+                "/location/location/contains",
+                "Pakistan"
+            ],
+            [
+                "Asia",
+                "/location/location/contains",
+                "Iran"
+            ],
+            [
+                "Asia",
+                "/location/location/contains",
+                "Korea"
+            ],
+            [
+                "Asia",
+                "/location/location/contains",
+                "India"
+            ]
+        ]
+    },
+    {
+        "text": "Connecticut Execution Is Cleared to Proceed The United States Supreme Court rejected two last-minute efforts to postpone Connecticut 's execution of a convicted serial killer , clearing the way for the first execution in New England in 45 years .",
+        "triple_list": [
+            [
+                "England",
+                "/location/location/contains",
+                "Connecticut"
+            ]
+        ]
+    },
+    {
+        "text": "The New Jersey Devils gave Newark officials a $ 100 million irrevocable letter of credit yesterday to meet the requirements of the team 's deal with the city to build a $ 310 million arena .",
+        "triple_list": [
+            [
+                "Newark",
+                "/sports/sports_team_location/teams",
+                "Devils"
+            ],
+            [
+                "Devils",
+                "/sports/sports_team/location",
+                "Newark"
+            ]
+        ]
+    },
+    {
+        "text": "Myles Brand , the National Collegiate Athletic Association president , announced the formation of a Presidential Task Force on the Future of Intercollegiate Athletics .",
+        "triple_list": [
+            [
+                "Brand",
+                "/business/person/company",
+                "Association"
+            ]
+        ]
+    },
+    {
+        "text": "The remains of the Halat-Fidar bridge in Lebanon , on Aug. 4 , hours after Israeli airstrikes destroyed it and several other bridges along the main highway north of Beirut .",
+        "triple_list": [
+            [
+                "Lebanon",
+                "/location/country/capital",
+                "Beirut"
+            ],
+            [
+                "Lebanon",
+                "/location/location/contains",
+                "Beirut"
+            ]
+        ]
+    },
+    {
+        "text": "Her projects included the Paris Theatre , New York ; the Caribe Hilton , San Juan , Puerto Rico ; Bonniers Retail Store , New York ; Earth Sciences Building , MIT , Cambridge , Mass . ; '' Resources for Man '' Pavilion , EXPO 67 , Montreal ; Campus Center , University of Massachusetts , Amherst .",
+        "triple_list": [
+            [
+                "Rico",
+                "/location/location/contains",
+                "Juan"
+            ],
+            [
+                "Rico",
+                "/location/country/capital",
+                "Juan"
+            ]
+        ]
+    },
+    {
+        "text": "Douglas Stinemetz , a lawyer with the Texas firm of Haynes & Boone who often travels between Houston and Moscow , frequently recharges his energy reserves at Moscow 's bowling lanes from 11 p.m. to 4 a.m. '' Bowling does seem to combat jet lag , '' said Mr. Stinemetz . ''",
+        "triple_list": [
+            [
+                "Texas",
+                "/location/location/contains",
+                "Houston"
+            ]
+        ]
+    },
+    {
+        "text": "Milton Shapiro , an 85-year-old former teacher who raised children in Teaneck , N.J. , moved to Manhattan when he retired in 1996 and lives by himself in an apartment house on the Upper West Side . ''",
+        "triple_list": [
+            [
+                "Side",
+                "/location/neighborhood/neighborhood_of",
+                "Manhattan"
+            ],
+            [
+                "Manhattan",
+                "/location/location/contains",
+                "Side"
+            ]
+        ]
+    },
+    {
+        "text": "THE WAY WE LIVE NOW : 1-29-06 James Traub , a contributing writer , is completing a book on the United Nations in the era of Kofi Annan .",
+        "triple_list": [
+            [
+                "Annan",
+                "/business/person/company",
+                "Nations"
+            ]
+        ]
+    },
+    {
+        "text": "This has been obscured in the state 's overall financial sector by the tripling of securities and brokerage employment in New Jersey , as Wall Street shifted across the Hudson River .",
+        "triple_list": [
+            [
+                "Jersey",
+                "/location/location/contains",
+                "River"
+            ]
+        ]
+    },
+    {
+        "text": "And the establishment of major new pharmaceutical research facilities in San Diego , California and Cambridge , Mass . -- not in New Jersey -- has recently raised concern .",
+        "triple_list": [
+            [
+                "California",
+                "/location/location/contains",
+                "Diego"
+            ]
+        ]
+    },
+    {
+        "text": "The vote , 324 to 85 , blocked an effort by Representative Ray LaHood , Republican of Illinois , to veto a report on the matter sent to Congress by President Bush last month .",
+        "triple_list": [
+            [
+                "Illinois",
+                "/location/location/contains",
+                "Bush"
+            ]
+        ]
+    },
+    {
+        "text": "NEFF -- Mary V. , formerly of Astoria , Queens on December 22 , 2006 .",
+        "triple_list": [
+            [
+                "Queens",
+                "/location/location/contains",
+                "Astoria"
+            ],
+            [
+                "Astoria",
+                "/location/neighborhood/neighborhood_of",
+                "Queens"
+            ]
+        ]
+    },
+    {
+        "text": "A6 India Rethinks Attack Evidence Three weeks after the police in India accused Pakistan 's intelligence agency of colluding in serial bombings on the commuter train line in Mumbai , M. K. Narayanan , the Indian national security adviser , said in an interview broadcast on television that the evidence was short of '' clinching . ''",
+        "triple_list": [
+            [
+                "India",
+                "/location/location/contains",
+                "Mumbai"
+            ]
+        ]
+    },
+    {
+        "text": "INTERNATIONAL A3-11 Sudan Fighting Threatens Wider African Conflict A visit to the site of the newest fighting in Sudan revealed a hardening conflict that is increasingly taking place along porous borders among some of the least stable countries in Africa , threatening to ignite a wide conflagration in the heart of the continent .",
+        "triple_list": [
+            [
+                "Africa",
+                "/location/location/contains",
+                "Sudan"
+            ]
+        ]
+    },
+    {
+        "text": "In an interview , a doctor in Medellin , Colombia , said that while he offered safe , if secret , abortions , many abortionists did not . ''",
+        "triple_list": [
+            [
+                "Colombia",
+                "/location/location/contains",
+                "Medellin"
+            ]
+        ]
+    },
+    {
+        "text": "While Mr. Bush was going to bat for Mr. Burns , Democrats were mounting a new effort against Senator Jon Kyl in Arizona , in a race the party had almost given up on .",
+        "triple_list": [
+            [
+                "Kyl",
+                "/people/person/place_lived",
+                "Arizona"
+            ]
+        ]
+    },
+    {
+        "text": "The chief executive of Southwest Airlines , Gary C. Kelly , was not optimistic that major changes would occur at Delta or Northwest . ''",
+        "triple_list": [
+            [
+                "Kelly",
+                "/business/person/company",
+                "Airlines"
+            ]
+        ]
+    },
+    {
+        "text": "At one Brooklyn school , St. Finbar in Bath Beach , parents spent the day cold-calling potential corporate sponsors . ''",
+        "triple_list": [
+            [
+                "Brooklyn",
+                "/location/location/contains",
+                "Beach"
+            ],
+            [
+                "Beach",
+                "/location/neighborhood/neighborhood_of",
+                "Brooklyn"
+            ]
+        ]
+    },
+    {
+        "text": "In the late 1980 's and early 90 's , breakout stars like Linda Evangelista , Yasmeen Ghauri and Shalom Harlow helped put Canada on the fashion map .",
+        "triple_list": [
+            [
+                "Evangelista",
+                "/people/person/nationality",
+                "Canada"
+            ],
+            [
+                "Harlow",
+                "/people/person/nationality",
+                "Canada"
+            ],
+            [
+                "Ghauri",
+                "/people/person/nationality",
+                "Canada"
+            ]
+        ]
+    },
+    {
+        "text": "Or as Heather Marks , the 17-year-old Vogue favorite from Calgary , puts it : '' It could be that Canada is just having a moment like Brazil and Russia did .",
+        "triple_list": [
+            [
+                "Marks",
+                "/people/person/nationality",
+                "Canada"
+            ],
+            [
+                "Marks",
+                "/people/person/place_of_birth",
+                "Calgary"
+            ],
+            [
+                "Canada",
+                "/location/location/contains",
+                "Calgary"
+            ]
+        ]
+    },
+    {
+        "text": "In Brussels , European Union leaders had approved a new budget through 2013 on Saturday morning .",
+        "triple_list": [
+            [
+                "Union",
+                "/location/location/contains",
+                "Brussels"
+            ]
+        ]
+    },
+    {
+        "text": "A convicted child molester jailed in California may have sexually assaulted hundreds of young boys in the United States , Brazil and Mexico , the police said Thursday , based on a search of the man 's San Jose home that the police said uncovered a cache of child pornography and detailed journals describing , sometimes in code , the sexual acts performed on children .",
+        "triple_list": [
+            [
+                "California",
+                "/location/location/contains",
+                "Jose"
+            ]
+        ]
+    },
+    {
+        "text": "Shiites ' Role Deepens ; Envoy Is Threatened Basra , in southern Iraq , far from the insurgency , is being transformed into a Shiite mini-theocracy , forming a flash point because the political parties in Basra also wield significant influence in Baghdad .",
+        "triple_list": [
+            [
+                "Iraq",
+                "/location/country/capital",
+                "Baghdad"
+            ],
+            [
+                "Iraq",
+                "/location/location/contains",
+                "Basra"
+            ],
+            [
+                "Iraq",
+                "/location/location/contains",
+                "Baghdad"
+            ]
+        ]
+    },
+    {
+        "text": "The complaint , filed in State Supreme Court in Manhattan by the New York attorney general and the New York insurance superintendent , details various transactions initiated or overseen by the former chief executive , Maurice R. Greenberg , that were intended to make the underwriting business look stronger than it was .",
+        "triple_list": [
+            [
+                "York",
+                "/location/location/contains",
+                "Manhattan"
+            ],
+            [
+                "Greenberg",
+                "/people/person/place_of_birth",
+                "York"
+            ]
+        ]
+    },
+    {
+        "text": "In 1996 , the prime minister of Australia , John Howard , appointed Mr. Bell to lead a task force on small business deregulation .",
+        "triple_list": [
+            [
+                "Howard",
+                "/people/person/nationality",
+                "Australia"
+            ]
+        ]
+    },
+    {
+        "text": "An executive at the association confirmed in a meeting and conference call among industry officials on Thursday that its clearinghouse had a partnership agreement with Daon , a biometrics company in Dublin , Ireland , according to a transcript of the meeting . ''",
+        "triple_list": [
+            [
+                "Ireland",
+                "/location/country/capital",
+                "Dublin"
+            ]
+        ]
+    },
+    {
+        "text": "Senator Sam Brownback , Republican of Kansas , said he thought the willingness of Senate Democrats to move forward reflected a new attitude within the party . ''",
+        "triple_list": [
+            [
+                "Brownback",
+                "/people/person/place_lived",
+                "Kansas"
+            ]
+        ]
+    },
+    {
+        "text": "On Monday , five ethnic Tamil students were killed in Trincomalee in eastern Sri Lanka .",
+        "triple_list": [
+            [
+                "Lanka",
+                "/location/location/contains",
+                "Trincomalee"
+            ]
+        ]
+    },
+    {
+        "text": "They collected the names for a letter to the Australian foreign minister , Alexander Downer , demanding that he take action to have Mr. Hicks , 30 , brought back to Australia to stand trial .",
+        "triple_list": [
+            [
+                "Downer",
+                "/people/person/nationality",
+                "Australia"
+            ]
+        ]
+    },
+    {
+        "text": "There was n't much love lost between Athens and Sparta , the two most important city-states of ancient Greece .",
+        "triple_list": [
+            [
+                "Greece",
+                "/location/location/contains",
+                "Sparta"
+            ],
+            [
+                "Greece",
+                "/location/location/contains",
+                "Athens"
+            ],
+            [
+                "Greece",
+                "/location/country/capital",
+                "Athens"
+            ]
+        ]
+    },
+    {
+        "text": "Roche , based in Basel , Switzerland , releases earnings figures only twice a year .",
+        "triple_list": [
+            [
+                "Switzerland",
+                "/location/location/contains",
+                "Basel"
+            ]
+        ]
+    },
+    {
+        "text": "I think federalism is a very civilized way of governing , but in Iraq it could lead to separation , '' said Ahmed Sulaiman , 53 , who owns a market in the heavily Sunni Adhamiya neighborhood of Baghdad .",
+        "triple_list": [
+            [
+                "Iraq",
+                "/location/location/contains",
+                "Baghdad"
+            ],
+            [
+                "Iraq",
+                "/location/country/capital",
+                "Baghdad"
+            ]
+        ]
+    }
+]
