@@ -14,7 +14,7 @@ class RecModel(nn.Module):
     def __init__(self, num_class, hidden_size):
         super(RecModel, self).__init__()
         self.num_labels = num_class
-        model_config = BertConfig.from_pretrained("bert-base-uncased")
+        model_config = BertConfig.from_pretrained("bert-base-chinese")  # uncased
         self.filter_sizes = (2, 3, 4)
         self.num_filters = 256
         self.bert = BertModel(model_config)
@@ -32,18 +32,22 @@ class RecModel(nn.Module):
 
     def forward(self, inputs, attention_mask, labels=None):
         outputs, pooled = self.bert(inputs, attention_mask=attention_mask)
-        # # 加CNN
-        outputs = outputs.unsqueeze(1)
-        outputs = torch.cat([self.conv_and_pool(outputs, conv) for conv in self.multi_conv], 1)
+        # ********************* 加CNN
+        # outputs = outputs.unsqueeze(1)
+        # outputs = torch.cat([self.conv_and_pool(outputs, conv) for conv in self.multi_conv], 1)
+        # *********************
         # 无CNN的时候
-        # sequence_output = pooled
+        sequence_output = pooled
+        # *********************
         # CNN
-        sequence_output = outputs
+        # sequence_output = outputs
+        # *********************
         sequence_output = self.dropout(sequence_output)
-        # 无CNN
-        # rel_out = self.lin1(sequence_output)
-        # 有CNN
-        rel_out = self.f_cnn(sequence_output)
+        # ********************* 无CNN
+        rel_out = self.lin1(sequence_output)
+        # ********************* 有CNN
+        # rel_out = self.f_cnn(sequence_output)
+        # *********************
         rel_out = rel_out.sigmoid()
         outputs = (rel_out,)
 

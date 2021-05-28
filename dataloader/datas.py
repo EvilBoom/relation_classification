@@ -27,7 +27,7 @@ class RecDataset(data.Dataset):
     def __init__(self, path=None, rel_dict_path=None):
         super().__init__()
         self.max_len = 300
-        self.bert_tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
+        self.bert_tokenizer = BertTokenizer.from_pretrained("bert-base-chinese")  # uncased
         self.path = path
         # 生成 id 和 relation 映射
         print("加载数据")
@@ -54,16 +54,24 @@ class RecDataset(data.Dataset):
         ret = self._tokenizer(item)
         return ret
 
+    # def _tokenize(self, tokens):
+    #     re_tokens = ['[CLS]']
+    #     for token in tokens.strip().split():
+    #         re_tokens += self.bert_tokenizer.tokenize(token)
+    #     re_tokens.append('[SEP]')
+    #     return re_tokens
     def _tokenize(self, tokens):
         re_tokens = ['[CLS]']
-        for token in tokens.strip().split():
+        for token in tokens:
             re_tokens += self.bert_tokenizer.tokenize(token)
         re_tokens.append('[SEP]')
         return re_tokens
 
     def _tokenizer(self, line):
-        # token 是分字后
-        text = ' '.join(line['text'].split()[:self.max_len])
+        # token 是分字后, 英文
+        # text = ' '.join(line['text'].split()[:self.max_len])
+        # 中文
+        text = line['text']
         tokens = self._tokenize(text)
         if len(tokens) > BERT_MAX_LEN:
             tokens = tokens[:BERT_MAX_LEN]
@@ -75,7 +83,7 @@ class RecDataset(data.Dataset):
         # attention_mask
         att_mask = torch.ones(len(token_ids)).long()
         # labels
-        temps_labels = torch.zeros(24).long()
+        temps_labels = torch.zeros(self.num_rel).long()
         labels = line['triple_list']
         for rel in labels:
             temps_labels[self.rel2id[rel[1]]] = 1

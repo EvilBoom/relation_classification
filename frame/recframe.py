@@ -41,7 +41,6 @@ class RecFrame(nn.Module):
             t = tqdm(self.train_loader)
             # 把数据放进GPU
             for t_iter, data in enumerate(t):
-                self.model.zero_grad()
                 tokens, tokens_id, att_mask, labels = data
                 # tokens.cuda()
                 tokens_id = tokens_id.cuda()
@@ -50,6 +49,7 @@ class RecFrame(nn.Module):
                 labels = labels.cuda()
                 loss, _ = self.model(tokens_id, attention_mask=att_mask, labels=labels)
                 train_loss += loss.item()
+                self.optimizer.zero_grad()
                 loss.backward()
                 self.optimizer.step()
             avg_loss = train_loss / len(t)
