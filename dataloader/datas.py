@@ -27,7 +27,7 @@ class RecDataset(data.Dataset):
     def __init__(self, path=None, rel_dict_path=None):
         super().__init__()
         self.max_len = 300
-        self.bert_tokenizer = BertTokenizer.from_pretrained("bert-base-chinese", do_lower_case=True)
+        self.bert_tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
         self.path = path
         # 生成 id 和 relation 映射
         print("加载数据")

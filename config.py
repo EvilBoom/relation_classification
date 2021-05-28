@@ -8,13 +8,13 @@ import os
 
 num_class = 24
 hidden_size = 768
-batch_size = 6
+batch_size = 42
 max_length = 300
 epoch = 100
 lr = 0.00003
 seed = 2021
 root_path = 'datasets'
-train_path = os.path.join(root_path, 'nyt/train_triples_small.json')
-dev_path = os.path.join(root_path, 'nyt/dev_triples_small.json')
+train_path = os.path.join(root_path, 'nyt/train_triples.json')
+dev_path = os.path.join(root_path, 'nyt/dev_triples.json')
 # test_path =
 rel2id_path = os.path.join(root_path, 'nyt/rel2id.json')

@@ -69,14 +69,11 @@ class RecFrame(nn.Module):
                     # dev_losses += loss.item()
                     # 计算评价指标
                     labels = labels.to('cpu').numpy()
-                    rel_out = rel_out.to('cpu').numpy
-                    pred_tags = []
-                    true_tags = []
-
+                    rel_out = rel_out[0].to('cpu').numpy()
                     for pre, gold in zip(rel_out, labels):
                         # 获取里面为 > 0.6 或者等于 1 的坐标
-                        pre_set = np.argwhere(pre > 0.5)
-                        gold_set = np.argwhere(gold == 1)
+                        pre_set = set([int(i) for i in np.argwhere(pre > 0.9996)])
+                        gold_set = set([int(i) for i in np.argwhere(gold == 1)])
                         pred_num += len(pre_set)
                         gold_num += len(gold_set)
                         correct_num += len(pre_set & gold_set)
