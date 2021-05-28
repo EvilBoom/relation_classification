@@ -76,7 +76,7 @@ class RecDataset(data.Dataset):
         att_mask = torch.ones(len(token_ids)).long()
         # labels
         temps_labels = torch.zeros(24).long()
-        labels = line['triples']
+        labels = line['triple_list']
         for rel in labels:
             temps_labels[self.rel2id[rel[1]]] = 1
         return [tokens, token_ids, att_mask, temps_labels]

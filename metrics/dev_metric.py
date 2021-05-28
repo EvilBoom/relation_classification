@@ -18,3 +18,7 @@ def cat_word_piece(self, x):
     new_x = ''.join([i.lstrip("##") for i in new_x])
     new_x = ' '.join(new_x.split('[blank]'))
     return new_x
+
+
+def metric_com():
+    pass
