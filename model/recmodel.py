@@ -31,21 +31,9 @@ class RecModel(nn.Module):
         if labels is not None:
             # 获取label mask
             loss_mask = labels.gt(0)
-
-            # Only keep active parts of the loss
-            if loss_mask is not None:
-                # 只留下label存在的位置计算loss
-                # active_loss = loss_mask.view(-1) == 1
-                # active_logits = rel_out.view(-1, self.num_labels)[active_loss]
-                # active_labels = labels.view(-1)[active_loss]
-                # loss = loss_fct(active_logits, active_labels)
-                loss = F.binary_cross_entropy(rel_out, labels.float(), reduction='none')
-                loss = (loss * loss_mask.float()).sum() / loss_mask.float().sum()
-                # print(loss)
-            else:
-                # loss = loss_fct(rel_out.view(-1, self.num_labels), labels.view(-1))
-                loss = F.binary_cross_entropy(rel_out, labels.float(), reduction='none')
-                loss = (loss * loss_mask.float()).sum() / loss_mask.float().sum()
+            loss = F.binary_cross_entropy(rel_out, labels.float(), reduction='none')
+            loss = (loss * loss_mask.float()).sum() / loss_mask.float().sum()
+            # print(loss)
             outputs = (loss,) + outputs
         # contain: (loss), scores
         return outputs

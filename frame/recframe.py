@@ -6,6 +6,7 @@
 # @desc :
 import logging
 
+import numpy as np
 import torch
 import torch.nn as nn
 from tqdm import tqdm
@@ -55,34 +56,33 @@ class RecFrame(nn.Module):
             logging.info(f"Epoch: {epoch}, train loss: {avg_loss}")
             self.eval()
             t = tqdm(self.dev_loader)
-            predict_num, correct_num = 1e-10, 1e-10
-            dev_losses = 0
+            pred_num, gold_num, correct_num = 1e-10, 1e-10, 1e-10
+            # dev_losses = 0
             with torch.no_grad():
                 for iter_s, batch_samples in enumerate(t):
-                    tokens, tokens_id, att_mask, labels = data = batch_samples
-                    batch_masks = batch_data.gt(0)  # get padding mask, gt(x): get index greater than x
-                    label_masks = batch_tags.gt(-1)  # get padding mask, gt(x): get index greater than x
-                    loss, _ = self.model(tokens_id, attention_mask=batch_masks, labels=labels)
-                    dev_losses += loss.item()
-
-                    # (batch_size, max_len - padding_label_len)
-                    batch_output = self.model.crf.decode(batch_output, mask=label_masks)
-                    # (batch_size, max_len)
-                    batch_tags = batch_tags.to('cpu').numpy()
+                    tokens, tokens_id, att_mask, labels = batch_samples
+                    tokens_id = tokens_id.cuda()
+                    att_mask = att_mask.cuda()
+                    labels = torch.stack(list(labels), dim=0)
+                    labels = labels.cuda()
+                    rel_out = self.model(tokens_id, attention_mask=att_mask)
+                    # dev_losses += loss.item()
+                    # 计算评价指标
+                    labels = labels.to('cpu').numpy()
+                    rel_out = rel_out.to('cpu').numpy
                     pred_tags = []
                     true_tags = []
-                    pred_tags.extend([[self.id2rel.get(idx) for idx in indices] for indices in batch_output])
-                    # (batch_size, max_len - padding_label_len)
-                    true_tags.extend([[self.id2rel.get(idx) for idx in indices if idx > -1] for indices in batch_tags])
-                    assert len(pred_tags) == len(true_tags)
-                    pred_set = find_all(pred_tags)
-                    true_set = find_all(true_tags)
-                    predict_num += len(pred_tags)
-                    correct_num += len(pred_set & true_set)
+
+                    for pre, gold in zip(rel_out, labels):
+                        # 获取里面为 > 0.6 或者等于 1 的坐标
+                        pre_set = np.argwhere(pre > 0.5)
+                        gold_set = np.argwhere(gold == 1)
+                        pred_num += len(pre_set)
+                        gold_num += len(gold_set)
+                        correct_num += len(pre_set & gold_set)
             print('正确个数', correct_num)
-            print('预测个数', predict_num)
-            precision = correct_num / predict_num
-            recall = correct_num / predict_num
+            print('预测个数', pred_num)
+            precision = correct_num / pred_num
+            recall = correct_num / gold_num
             f1_score = 2 * precision * recall / (precision + recall)
             print('f1: %.4f, precision: %.4f, recall: %.4f' % (f1_score, precision, recall))
-            return precision, recall, f1_score
