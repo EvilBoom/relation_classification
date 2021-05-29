@@ -8,8 +8,7 @@ import json
 import codecs
 import re
 if __name__ == '__main__':
-    data = json.load(open('../datasets/nyt/train_triples.json', encoding='utf-8'))
-    ret_data = []
+    data = json.load(open('../datasets/nyt/dev_triples_s.json', encoding='utf-8'))
     pattern = '/(.*?)/(.*?)/(.*?)$'
     for item in data:
         spo_list = item['triple_list']
@@ -18,5 +17,5 @@ if __name__ == '__main__':
             relation = re.search(pattern, spo[1]).group(3)
             spo[1] = relation
         item['triple_list'] = spo_list
-    with codecs.open('../datasets/nyt/train_triples.json', 'w', encoding='utf-8') as f:
-        json.dump(ret_data, f, indent=4, ensure_ascii=False)
+    with codecs.open('../datasets/nyt/dev_triples.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
