@@ -10,15 +10,15 @@ import numpy as np
 import torch
 import torch.nn as nn
 from tqdm import tqdm
-
+from model.recmodel import RecModel
 from dataloader.dataloaders import rec_dataloader
 
 
 class RecFrame(nn.Module):
-    def __init__(self, re_model, batch_size, lr,
-                 max_epoch, train, val, rel2id):
+    def __init__(self, batch_size, lr,
+                 max_epoch, train, val, num_class, hidden_size, rel2id=None, test=None):
         super().__init__()
-        self.model = re_model
+        self.model = RecModel(num_class, hidden_size).cuda()
         self.batch_size = batch_size
         self.lr = lr
         self.max_epoch = max_epoch
@@ -35,7 +35,7 @@ class RecFrame(nn.Module):
     def train_start(self):
         for epoch in range(self.max_epoch):
             # Train
-            self.train()
+            self.model.train()
             train_loss = 0
             print(f"=== Epoch {epoch} train ===")
             t = tqdm(self.train_loader)
@@ -47,14 +47,15 @@ class RecFrame(nn.Module):
                 att_mask = att_mask.cuda()
                 labels = torch.stack(list(labels), dim=0)
                 labels = labels.cuda()
-                loss, _ = self.model(tokens_id, attention_mask=att_mask, labels=labels)
+                out = self.model(tokens_id, attention_mask=att_mask, labels=labels)
+                loss = self.loss_func(out, labels.float())
                 train_loss += loss.item()
-                self.optimizer.zero_grad()
+                self.model.zero_grad()
                 loss.backward()
                 self.optimizer.step()
             avg_loss = train_loss / len(t)
             logging.info(f"Epoch: {epoch}, train loss: {avg_loss}")
-            self.eval()
+            self.model.eval()
             t = tqdm(self.dev_loader)
             pred_num, gold_num, correct_num = 1e-10, 1e-10, 1e-10
             # dev_losses = 0
@@ -69,10 +70,10 @@ class RecFrame(nn.Module):
                     # dev_losses += loss.item()
                     # 计算评价指标
                     labels = labels.to('cpu').numpy()
-                    rel_out = rel_out[0].to('cpu').numpy()
+                    rel_out = rel_out.to('cpu').numpy()
                     for pre, gold in zip(rel_out, labels):
                         # 获取里面为 > 0.6 或者等于 1 的坐标
-                        pre_set = set([int(i) for i in np.argwhere(pre > 0.9996)])
+                        pre_set = set([int(i) for i in np.argwhere(pre > 0.6)])
                         gold_set = set([int(i) for i in np.argwhere(gold == 1)])
                         pred_num += len(pre_set)
                         gold_num += len(gold_set)

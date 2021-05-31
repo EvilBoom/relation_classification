@@ -13,13 +13,18 @@ max_length = 300
 epoch = 100
 lr = 0.00003
 seed = 2021
-root_path = 'datasets'
-train_path = os.path.join(root_path, 'nyt/train_triples.json')
-dev_path = os.path.join(root_path, 'nyt/dev_triples.json')
+# root_path = 'datasets'
+# ************* nyt
+train_path = os.path.join('D:/Projects/datasets/nyt/train_triples.json')
+dev_path = os.path.join('D:/Projects/datasets/nyt/dev_triples.json')
 # test_path =
-rel2id_path = os.path.join(root_path, 'nyt/rel2id.json')
-# train_path = os.path.join(root_path, 'pp/train_triples_small.json')
-# dev_path = os.path.join(root_path, 'pp/dev_triples_small.json')
+rel2id_path = os.path.join('D:/Projects/datasets/nyt/rel2id.json')
+# ************* baidu
+# train_path = os.path.join(root_path, 'D:/Projects/datasets/pp/train_triples.json')
+# dev_path = os.path.join(root_path, 'D:/Projects/datasets/pp/dev_triples.json')
 # # test_path =
 # rel2id_path = os.path.join(root_path, 'pp/rel2id.json')
-
+# ************* 情感分析
+# train_path = os.path.join('D:/Projects/datasets/sentiment/train_triples.json')
+# dev_path = os.path.join('D:/Projects/datasets/sentiment/dev_triples.json')
+# test_path = os.path.join('D:/Projects/datasets/sentiment/test_triples.json')

@@ -12,7 +12,6 @@ import torch
 
 from config import *
 from frame.recframe import RecFrame
-from model.recmodel import RecModel
 
 
 def seed_torch(m_seed=2021):
@@ -32,9 +31,8 @@ if __name__ == '__main__':
     is_train = args.train
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     seed_torch(seed)
-
-    re_cls_model = RecModel(num_class, hidden_size)
-    re_cls_model.cuda()
-    framework = RecFrame(re_cls_model, batch_size, lr,
-                         epoch, train_path, dev_path, rel2id_path)
+    framework = RecFrame(batch_size, lr,
+                         epoch, train_path, dev_path, rel2id=rel2id_path, num_class=num_class, hidden_size=hidden_size)
+    # framework = RecFrame(batch_size, lr, epoch, train_path, dev_path, test=test_path, num_class=num_class,
+    #                      hidden_size=hidden_size)
     framework.train_start()

@@ -27,10 +27,12 @@ class RecDataset(data.Dataset):
     def __init__(self, path=None, rel_dict_path=None):
         super().__init__()
         self.max_len = 300
-        self.bert_tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")  # uncased chinese
+        # self.bert_tokenizer = BertTokenizer.from_pretrained(r"D:\Projects\pre_model\chinese-bert-wwm")  # uncased chinese
+        self.bert_tokenizer = BertTokenizer.from_pretrained(r"D:\Projects\pre_model\bert-base-uncased")  # uncased chinese
         self.path = path
         # 生成 id 和 relation 映射
         print("加载数据")
+        ###
         id_and_rel = json.load(open(rel_dict_path, encoding='utf-8'))
         id2rel = id_and_rel["id2rel"]
         rel2id = id_and_rel["rel2id"]
@@ -44,6 +46,7 @@ class RecDataset(data.Dataset):
         self.device = torch.device("cuda")
         # 初始化 sentences，labels，rel2id, id2rel
         self.num_rel = len(id2rel)
+        # self.num_rel = 2
         print('加载数据\n')
 
     def __len__(self):
@@ -54,24 +57,24 @@ class RecDataset(data.Dataset):
         ret = self._tokenizer(item)
         return ret
 
-    # def _tokenize(self, tokens):
-    #     re_tokens = ['[CLS]']
-    #     for token in tokens.strip().split():
-    #         re_tokens += self.bert_tokenizer.tokenize(token)
-    #     re_tokens.append('[SEP]')
-    #     return re_tokens
     def _tokenize(self, tokens):
         re_tokens = ['[CLS]']
-        for token in tokens:
+        for token in tokens.strip().split():
             re_tokens += self.bert_tokenizer.tokenize(token)
         re_tokens.append('[SEP]')
         return re_tokens
+    # def _tokenize(self, tokens):
+    #     re_tokens = ['[CLS]']
+    #     for token in tokens:
+    #         re_tokens += self.bert_tokenizer.tokenize(token)
+    #     re_tokens.append('[SEP]')
+    #     return re_tokens
 
     def _tokenizer(self, line):
         # token 是分字后, 英文
-        # text = ' '.join(line['text'].split()[:self.max_len])
+        text = ' '.join(line['text'].split()[:self.max_len])
         # 中文
-        text = line['text']
+        # text = line['text']
         tokens = self._tokenize(text)
         if len(tokens) > BERT_MAX_LEN:
             tokens = tokens[:BERT_MAX_LEN]
@@ -87,6 +90,7 @@ class RecDataset(data.Dataset):
         labels = line['triple_list']
         for rel in labels:
             temps_labels[self.rel2id[rel[1]]] = 1
+        # temps_labels[labels] = 1
         return [tokens, token_ids, att_mask, temps_labels]
 
     @staticmethod
